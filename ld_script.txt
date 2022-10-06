@@ -334,6 +334,7 @@ SECTIONS {
         src/international_string_util.o(.text);
         src/rhh_copyright.o(.text);
         src/dns.o(.text);
+        src/follow_me.o(.text);
     } =0
 
     script_data :
@@ -698,6 +699,7 @@ SECTIONS {
         data/sound_data.o(.rodata);
         src/rhh_copyright.o(.rodata);
         src/dns.o(.rodata);
+        src/follow_me.o(.rodata);
     } =0
 
     song_data :
@@ -1260,6 +1262,12 @@ SECTIONS {
         data/ereader_link_data.o(.rodata);
         data/multiboot_berry_glitch_fix.o(.rodata);
         data/multiboot_pokemon_colosseum.o(.rodata);
+    } =0
+
+    anim_mon_front_pic_data :
+    ALIGN(4)
+    {
+        src/pokemon.o(.rodata);
     } =0
 
     gfx_data  :
