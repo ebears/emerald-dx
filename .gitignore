@@ -38,3 +38,5 @@ porymap.project.cfg
 *.sym
 tools/poryscript
 Porymap-Animation
+porymap.user.cfg
+prefabs.json
