@@ -26,6 +26,7 @@ Everyone from [rh-hideout](https://github.com/rh-hideout)\
 [ghoulslash](https://github.com/ghoulslash)\
 [SamuRH/Xhizy](https://github.com/Xhyzi)\
 [ProfLeonDias](https://github.com/ProfLeonDias)\
-[Anon822](https://www.pokecommunity.com/member.php?u=699429)
+[Anon822](https://www.pokecommunity.com/member.php?u=699429)\
+[W1serV1ser](https://github.com/W1serV1ser)
 
 ...and everyone else in the Pokémon ROM hacking community. Thank you.
