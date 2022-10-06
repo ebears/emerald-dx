@@ -7,6 +7,7 @@ Just my attempt at a decomp romhack.
 [Battle Engine Upgrade](https://www.pokecommunity.com/showthread.php?t=417820) - **Physical / Special Split**, **Moves, Abilities, Pokémon and Items from new gens**, **Updated Learnsets**, **Fairy Typing**, **Ability pop-up**, **Exp points on catch**, **Faster battle intro**, **Mega Evolutions**, **Mid-battle Trainer messages**, and more.\
 [RHH Intro Credits](https://github.com/Xhyzi/pokeemerald/tree/rhh-intro-credits)\
 [Day & Night Cycle](https://github.com/Xhyzi/pokeemerald/tree/day-and-night)\
+[Following Pokemon (except Shellos, Gastrodon and Porygon-Z -- WIP)](https://github.com/W1serV1ser/pokeemerald/tree/FollowingPokemon)\
 [Decapitzalized Text and Dialogue](https://github.com/ProfLeonDias/pokeemerald/tree/decapitalization)\
 [Colored Stats Based on Nature](https://github.com/DizzyEggg/pokeemerald/tree/nature_color)\
 [Physical Special Split Icons In Battle](https://www.pokecommunity.com/showthread.php?p=10527471#post10527471)\
