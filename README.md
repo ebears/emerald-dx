@@ -11,6 +11,7 @@ Just my attempt at a decomp romhack.
 [Decapitzalized Text and Dialogue](https://github.com/ProfLeonDias/pokeemerald/tree/decapitalization)\
 [Colored Stats Based on Nature](https://github.com/DizzyEggg/pokeemerald/tree/nature_color)\
 [Physical Special Split Icons In Battle](https://www.pokecommunity.com/showthread.php?p=10527471#post10527471)\
+[Unbound Quest Menu](https://www.pokecommunity.com/showthread.php?p=10528414#post10528414)\
 [Improved WaitForVBlank Functioning (improving battery/performance)](https://github.com/pret/pokeemerald/wiki/Improving-the-WaitForVBlank-function)\
 [More Optimized Summary Screen](https://github.com/pret/pokeemerald/wiki/Make-space-for-EWRAM-Data-for-Summary-screen)
 
@@ -28,6 +29,7 @@ Everyone from [rh-hideout](https://github.com/rh-hideout)\
 [SamuRH/Xhizy](https://github.com/Xhyzi)\
 [ProfLeonDias](https://github.com/ProfLeonDias)\
 [Anon822](https://www.pokecommunity.com/member.php?u=699429)\
-[W1serV1ser](https://github.com/W1serV1ser)
+[W1serV1ser](https://github.com/W1serV1ser)\
+[PokemonSanFran](https://github.com/PokemonSanFran)
 
 ...and everyone else in the Pokémon ROM hacking community. Thank you.
