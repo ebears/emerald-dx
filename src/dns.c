@@ -157,7 +157,7 @@ const struct DnsPalExceptions gCombatPalExceptions =
         DNS_PAL_ACTIVE,     //7
         DNS_PAL_ACTIVE,     //8
         DNS_PAL_ACTIVE,     //9
-        DNS_PAL_ACTIVE,     //10
+        DNS_PAL_EXCEPTION,  //10
         DNS_PAL_ACTIVE,     //11
         DNS_PAL_ACTIVE,     //12
         DNS_PAL_ACTIVE,     //13
