@@ -14,6 +14,7 @@ Just my attempt at a decomp romhack.
 [Unbound Quest Menu](https://www.pokecommunity.com/showthread.php?p=10528414#post10528414)\
 [Improved WaitForVBlank Functioning (improving battery/performance)](https://github.com/pret/pokeemerald/wiki/Improving-the-WaitForVBlank-function)\
 [More Optimized Summary Screen](https://github.com/pret/pokeemerald/wiki/Make-space-for-EWRAM-Data-for-Summary-screen)\
+[Faster Text Speed Options](https://www.pokecommunity.com/showthread.php?p=10400198#post10400198)\
 [Debug Menu (requires game to be built as 'make DDEBUGGING=1')](https://github.com/pret/pokeemerald/wiki/Add-a-debug-menu)
 
 ## Credits
@@ -31,6 +32,7 @@ Everyone from [rh-hideout](https://github.com/rh-hideout)\
 [ProfLeonDias](https://github.com/ProfLeonDias)\
 [Anon822](https://www.pokecommunity.com/member.php?u=699429)\
 [W1serV1ser](https://github.com/W1serV1ser)\
-[PokemonSanFran](https://github.com/PokemonSanFran)
+[PokemonSanFran](https://github.com/PokemonSanFran)\
+[ellabrella](https://www.pokecommunity.com/member.php?u=751712)
 
 ...and everyone else in the Pokémon ROM hacking community. Thank you.
