@@ -163,22 +163,22 @@ const struct DnsPalExceptions gCombatPalExceptions =
         DNS_PAL_ACTIVE,     //13
         DNS_PAL_ACTIVE,     //14
         DNS_PAL_ACTIVE,     //15
-        DNS_PAL_EXCEPTION,  //16
-        DNS_PAL_EXCEPTION,  //17
-        DNS_PAL_EXCEPTION,  //18
-        DNS_PAL_EXCEPTION,  //19
-        DNS_PAL_EXCEPTION,  //20
-        DNS_PAL_EXCEPTION,  //21
-        DNS_PAL_EXCEPTION,  //22
-        DNS_PAL_EXCEPTION,  //23
-        DNS_PAL_EXCEPTION,  //24
-        DNS_PAL_EXCEPTION,  //25
-        DNS_PAL_EXCEPTION,  //26
-        DNS_PAL_EXCEPTION,  //27
-        DNS_PAL_EXCEPTION,  //28
-        DNS_PAL_EXCEPTION,  //29
-        DNS_PAL_EXCEPTION,  //30
-        DNS_PAL_EXCEPTION,  //31
+        DNS_PAL_ACTIVE,  //16
+        DNS_PAL_ACTIVE,  //17
+        DNS_PAL_ACTIVE,  //18
+        DNS_PAL_ACTIVE,  //19
+        DNS_PAL_ACTIVE,  //20
+        DNS_PAL_ACTIVE,  //21
+        DNS_PAL_ACTIVE,  //22
+        DNS_PAL_ACTIVE,  //23
+        DNS_PAL_ACTIVE,  //24
+        DNS_PAL_ACTIVE,  //25
+        DNS_PAL_ACTIVE,  //26
+        DNS_PAL_ACTIVE,  //27
+        DNS_PAL_ACTIVE,  //28
+        DNS_PAL_ACTIVE,  //29
+        DNS_PAL_ACTIVE,  //30
+        DNS_PAL_ACTIVE,  //31
     }
 };
 
