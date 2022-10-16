@@ -55,41 +55,48 @@ enum
  * "light colour".                                                  */
 const struct LightingColour gLightingColours[] =
 {
+    // Pokecenter Doors
     {
         .paletteNum = 1,
         .colourNum = 10,
-        .lightColour = RGB2(22, 21, 3),
+        .lightColour = RGB2(26, 25, 10),
     },
+    // windows ??
     {
         .paletteNum = 6,
         .colourNum = 9,
-        .lightColour = RGB2(22, 21, 3),
+        .lightColour = RGB2(22, 21, 9),
     },
+    // windows ??
     {
         .paletteNum = 6,
         .colourNum = 10,
-        .lightColour = RGB2(26, 25, 4),
+        .lightColour = RGB2(26, 25, 10),
 
     },
+    // windows ??
     {
         .paletteNum = 8,
         .colourNum = 9,
-        .lightColour = RGB2(22, 21, 3),
+        .lightColour = RGB2(22, 21, 9),
     },
+    // windows ??
     {
         .paletteNum = 8,
         .colourNum = 10,
-        .lightColour = RGB2(26, 25, 4),
+        .lightColour = RGB2(26, 25, 10),
     },
+    // windows ??
     {
         .paletteNum = 9,
         .colourNum = 9,
-        .lightColour = RGB2(22, 21, 3),
+        .lightColour = RGB2(22, 21, 9),
     },
+    // windows ??
     {
         .paletteNum = 9,
         .colourNum = 10,
-        .lightColour = RGB2(26, 25, 4),
+        .lightColour = RGB2(26, 25, 10),
     },
 };
 
@@ -163,22 +170,22 @@ const struct DnsPalExceptions gCombatPalExceptions =
         DNS_PAL_ACTIVE,     //13
         DNS_PAL_ACTIVE,     //14
         DNS_PAL_ACTIVE,     //15
-        DNS_PAL_ACTIVE,  //16
-        DNS_PAL_ACTIVE,  //17
-        DNS_PAL_ACTIVE,  //18
-        DNS_PAL_ACTIVE,  //19
-        DNS_PAL_ACTIVE,  //20
-        DNS_PAL_ACTIVE,  //21
-        DNS_PAL_ACTIVE,  //22
-        DNS_PAL_ACTIVE,  //23
-        DNS_PAL_ACTIVE,  //24
-        DNS_PAL_ACTIVE,  //25
-        DNS_PAL_ACTIVE,  //26
-        DNS_PAL_ACTIVE,  //27
-        DNS_PAL_ACTIVE,  //28
-        DNS_PAL_ACTIVE,  //29
-        DNS_PAL_ACTIVE,  //30
-        DNS_PAL_ACTIVE,  //31
+        DNS_PAL_ACTIVE,     //16
+        DNS_PAL_ACTIVE,     //17
+        DNS_PAL_ACTIVE,     //18
+        DNS_PAL_ACTIVE,     //19
+        DNS_PAL_ACTIVE,     //20
+        DNS_PAL_ACTIVE,     //21
+        DNS_PAL_ACTIVE,     //22
+        DNS_PAL_ACTIVE,     //23
+        DNS_PAL_ACTIVE,     //24
+        DNS_PAL_ACTIVE,     //25
+        DNS_PAL_ACTIVE,     //26
+        DNS_PAL_ACTIVE,     //27
+        DNS_PAL_ACTIVE,     //28
+        DNS_PAL_ACTIVE,     //29
+        DNS_PAL_ACTIVE,     //30
+        DNS_PAL_ACTIVE,     //31
     }
 };
 
