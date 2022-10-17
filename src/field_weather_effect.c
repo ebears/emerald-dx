@@ -100,6 +100,7 @@ static const struct SpriteTemplate sCloudSpriteTemplate =
 
 void Clouds_InitVars(void)
 {
+    gWeatherPtr->noShadows = FALSE;
     gWeatherPtr->gammaTargetIndex = 0;
     gWeatherPtr->gammaStepDelay = 20;
     gWeatherPtr->weatherGfxLoaded = FALSE;
@@ -161,6 +162,7 @@ void Sunny_InitVars(void)
     gWeatherPtr->gammaTargetIndex = 0;
     gWeatherPtr->gammaStepDelay = 20;
     Weather_SetBlendCoeffs(8, 12);
+    gWeatherPtr->noShadows = FALSE;
 }
 
 void Sunny_InitAll(void)
@@ -244,6 +246,7 @@ void Drought_InitVars(void)
     gWeatherPtr->weatherGfxLoaded = FALSE;
     gWeatherPtr->gammaTargetIndex = 0;
     gWeatherPtr->gammaStepDelay = 0;
+    gWeatherPtr->noShadows = FALSE;
 }
 
 void Drought_InitAll(void)
@@ -486,6 +489,7 @@ void Rain_InitVars(void)
     gWeatherPtr->gammaTargetIndex = 3;
     gWeatherPtr->gammaStepDelay = 20;
     SetRainStrengthFromSoundEffect(SE_RAIN);
+    gWeatherPtr->noShadows = FALSE;
 }
 
 void Rain_InitAll(void)
@@ -779,6 +783,7 @@ void Snow_InitVars(void)
     gWeatherPtr->gammaStepDelay = 20;
     gWeatherPtr->targetSnowflakeSpriteCount = 16;
     gWeatherPtr->snowflakeVisibleCounter = 0;
+    gWeatherPtr->noShadows = FALSE;
 }
 
 void Snow_InitAll(void)
@@ -1054,6 +1059,7 @@ void Thunderstorm_InitVars(void)
     gWeatherPtr->weatherGfxLoaded = FALSE;  // duplicate assignment
     gWeatherPtr->thunderTriggered = FALSE;
     SetRainStrengthFromSoundEffect(SE_THUNDERSTORM);
+    gWeatherPtr->noShadows = FALSE;
 }
 
 void Thunderstorm_InitAll(void)
@@ -1082,6 +1088,7 @@ void Downpour_InitVars(void)
     gWeatherPtr->gammaStepDelay = 20;
     gWeatherPtr->weatherGfxLoaded = FALSE;  // duplicate assignment
     SetRainStrengthFromSoundEffect(SE_DOWNPOUR);
+    gWeatherPtr->noShadows = FALSE;
 }
 
 void Downpour_InitAll(void)
@@ -1377,6 +1384,7 @@ void FogHorizontal_InitVars(void)
         gWeatherPtr->fogHScrollPosX = 0;
         Weather_SetBlendCoeffs(0, 16);
     }
+    gWeatherPtr->noShadows = TRUE;
 }
 
 void FogHorizontal_InitAll(void)
@@ -1530,8 +1538,9 @@ void Ash_InitVars(void)
     if (!gWeatherPtr->ashSpritesCreated)
     {
         Weather_SetBlendCoeffs(0, 16);
-        SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(64, 63)); // These aren't valid blend coefficients!
+        // SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(64, 63)); // These aren't valid blend coefficients!
     }
+    gWeatherPtr->noShadows = FALSE;
 }
 
 void Ash_InitAll(void)
@@ -1749,6 +1758,7 @@ void FogDiagonal_InitVars(void)
         gWeatherPtr->fogDPosY = 0;
         Weather_SetBlendCoeffs(0, 16);
     }
+    gWeatherPtr->noShadows = TRUE;
 }
 
 void FogDiagonal_InitAll(void)
@@ -1963,6 +1973,7 @@ void Sandstorm_InitVars(void)
 
         Weather_SetBlendCoeffs(0, 16);
     }
+    gWeatherPtr->noShadows = TRUE;
 }
 
 void Sandstorm_InitAll(void)
@@ -2249,6 +2260,7 @@ void Shade_InitVars(void)
     gWeatherPtr->initStep = 0;
     gWeatherPtr->gammaTargetIndex = 3;
     gWeatherPtr->gammaStepDelay = 20;
+    gWeatherPtr->noShadows = FALSE;
 }
 
 void Shade_InitAll(void)
@@ -2310,6 +2322,7 @@ void Bubbles_InitVars(void)
         gWeatherPtr->bubblesCoordsIndex = 0;
         gWeatherPtr->bubblesSpriteCount = 0;
     }
+    gWeatherPtr->noShadows = TRUE;
 }
 
 void Bubbles_InitAll(void)
