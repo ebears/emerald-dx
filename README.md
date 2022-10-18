@@ -38,6 +38,13 @@ The battle engine balance is completely changed from Gen. 3 - expect a feel more
 
 [Debug Menu (requires game to be built as 'make dev=1')](https://github.com/pret/pokeemerald/wiki/Add-a-debug-menu)
 
+## Bugs
+
+Item registration menu is broken.
+Following Pokemon don't have shadows.
+Very large following Pokemon sprites (Regigigas) sometimes clip through tiles.
+Nighttime lights in Oldale Town turn 'off' when entering town connection.
+
 ## Credits
 
 Everyone from [pret](https://github.com/pret)\
