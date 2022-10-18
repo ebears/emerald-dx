@@ -1,21 +1,35 @@
 # Pokémon Emerald: bear Edition
 
-Just my attempt at a decomp romhack.
+Just my project aimed at improving Pokemon Emerald. This is based on - and wouldn't be made possible without - the [pokeemerald](https://github.com/pret/pokeemerald) disassembly by PRET.
 
-## Features
+The battle engine balance is completely changed from Gen. 3 - expect a feel more like Gen. 5.
+
+## Information
+
+### Notable Features
 
 [Battle Engine Upgrade](https://www.pokecommunity.com/showthread.php?t=417820) - **Physical / Special Split**, **Moves, Abilities, Pokémon and Items from new gens**, **Updated Learnsets**, **Fairy Typing**, **Ability pop-up**, **Exp points on catch**, **Faster battle intro**, **Mega Evolutions**, **Mid-battle Trainer messages**, and more.\
-[RHH Intro Credits](https://github.com/Xhyzi/pokeemerald/tree/rhh-intro-credits)\
 [Day & Night Cycle](https://github.com/Xhyzi/pokeemerald/tree/day-and-night)\
 [Following Pokemon (except Shellos, Gastrodon and Porygon-Z -- WIP)](https://github.com/W1serV1ser/pokeemerald/tree/FollowingPokemon)\
-[HG/SS-Style Overworld Shadows](https://github.com/aarant/pokeemerald/commit/12e3b4efadafdef43bba26ca1ce897135808779c)\
+[Unbound Quest Menu](https://www.pokecommunity.com/showthread.php?p=10528414#post10528414)
+
+### Other Features
+
 [Decapitzalized Text and Dialogue](https://github.com/ProfLeonDias/pokeemerald/tree/decapitalization)\
 [Colored Stats Based on Nature](https://github.com/DizzyEggg/pokeemerald/tree/nature_color)\
 [Physical Special Split Icons In Battle](https://www.pokecommunity.com/showthread.php?p=10527471#post10527471)\
-[Unbound Quest Menu](https://www.pokecommunity.com/showthread.php?p=10528414#post10528414)\
+[RHH Intro Credits](https://github.com/Xhyzi/pokeemerald/tree/rhh-intro-credits)\
+[HG/SS-Style Overworld Shadows](https://github.com/aarant/pokeemerald/commit/12e3b4efadafdef43bba26ca1ce897135808779c)\
+[Faster Text Speed Options](https://www.pokecommunity.com/showthread.php?p=10400198#post10400198)
+
+### Engine Fixes
+
 [Improved WaitForVBlank Functioning (improving battery/performance)](https://github.com/pret/pokeemerald/wiki/Improving-the-WaitForVBlank-function)\
-[More Optimized Summary Screen](https://github.com/pret/pokeemerald/wiki/Make-space-for-EWRAM-Data-for-Summary-screen)\
-[Faster Text Speed Options](https://www.pokecommunity.com/showthread.php?p=10400198#post10400198)\
+[Faster HP Drain](https://github.com/pret/pokeemerald/wiki/Faster-HP-Drain)\
+[More Optimized Summary Screen](https://github.com/pret/pokeemerald/wiki/Make-space-for-EWRAM-Data-for-Summary-screen)
+
+### Dev Features
+
 [Debug Menu (requires game to be built as 'make DDEBUGGING=1')](https://github.com/pret/pokeemerald/wiki/Add-a-debug-menu)
 
 ## Credits
@@ -37,4 +51,4 @@ Everyone from [rh-hideout](https://github.com/rh-hideout)\
 [ellabrella](https://www.pokecommunity.com/member.php?u=751712)\
 [aarant](https://github.com/aarant)
 
-...and everyone else in the Pokémon ROM hacking community. Thank you.
+...and everyone else in the Pokémon decompilation community. Thank you.

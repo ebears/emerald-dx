@@ -55,12 +55,14 @@ enum
  * "light colour".                                                  */
 const struct LightingColour gLightingColours[] =
 {
-    // Pokecenter Doors
+    /*
+    Pokecenter Doors
     {
         .paletteNum = 1,
         .colourNum = 10,
         .lightColour = RGB2(26, 25, 10),
     },
+    */
     // windows ??
     {
         .paletteNum = 6,
