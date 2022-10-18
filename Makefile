@@ -311,7 +311,7 @@ ifeq ($(DINFO),1)
 override CFLAGS += -g
 endif
 
-ifeq ($(DDEBUGGING),1)
+ifeq ($(dev),1)
 override ASFLAGS += --defsym DEBUGGING=1
 override CPPFLAGS += -D DEBUGGING=1
 endif

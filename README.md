@@ -36,7 +36,7 @@ The battle engine balance is completely changed from Gen. 3 - expect a feel more
 
 ### Dev Features
 
-[Debug Menu (requires game to be built as 'make DDEBUGGING=1')](https://github.com/pret/pokeemerald/wiki/Add-a-debug-menu)
+[Debug Menu (requires game to be built as 'make dev=1')](https://github.com/pret/pokeemerald/wiki/Add-a-debug-menu)
 
 ## Credits
 
