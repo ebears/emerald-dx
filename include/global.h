@@ -135,6 +135,9 @@
 #define DEX_FLAGS_NO ROUND_BITS_TO_BYTES(POKEMON_SLOTS_NUMBER)
 #define NUM_FLAG_BYTES ROUND_BITS_TO_BYTES(FLAGS_COUNT)
 
+//tx_registered_items_menu
+#define REGISTERED_ITEMS_MAX 10
+
 struct Coords8
 {
     s8 x;
@@ -588,6 +591,11 @@ struct ItemSlot
     u16 quantity;
 };
 
+struct RegisteredItemSlot
+{
+    u16 itemId;
+};
+
 struct Pokeblock
 {
     u8 color;
@@ -979,7 +987,7 @@ struct SaveBlock1
     /*0x238*/ struct Pokemon playerParty[PARTY_SIZE];
     /*0x490*/ u32 money;
     /*0x494*/ u16 coins;
-    /*0x496*/ u16 registeredItem; // registered for use with SELECT button
+    /*0x496*/ u16 registeredItemSelect; // registered for use with SELECT button
     /*0x498*/ struct ItemSlot pcItems[PC_ITEMS_COUNT];
     /*0x560*/ struct ItemSlot bagPocket_Items[BAG_ITEMS_COUNT];
     /*0x5D8*/ struct ItemSlot bagPocket_KeyItems[BAG_KEYITEMS_COUNT];
@@ -1050,6 +1058,9 @@ struct SaveBlock1
     /*0x3???*/ struct SaveTrainerHill trainerHill;
     /*0x3???*/ struct WaldaPhrase waldaPhrase;
     // sizeof: 0x3???
+                u8 registeredItemLastSelected:4; //max 16 items
+                u8 registeredItemListCount:4;
+                struct RegisteredItemSlot registeredItems[REGISTERED_ITEMS_MAX];
 };
 
 extern struct SaveBlock1* gSaveBlock1Ptr;

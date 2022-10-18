@@ -332,6 +332,7 @@ SECTIONS {
         src/gym_leader_rematch.o(.text);
         src/battle_transition_frontier.o(.text);
         src/international_string_util.o(.text);
+        src/tx_registered_items_menu.o(.text);
         src/debug.o(.text);
         src/rhh_copyright.o(.text);
         src/dns.o(.text);
@@ -699,6 +700,7 @@ SECTIONS {
         data/mystery_gift.o(.rodata);
         src/m4a_tables.o(.rodata);
         data/sound_data.o(.rodata);
+        src/tx_registered_items_menu.o(.rodata);
         src/debug.o(.rodata);
         src/rhh_copyright.o(.rodata);
         src/dns.o(.rodata);

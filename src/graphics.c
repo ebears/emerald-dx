@@ -1643,6 +1643,7 @@ const u32 gBattlePyramidBagInterface_Pal[] = INCBIN_U32("graphics/interface/bag_
 
 const u32 gBagSwapLineGfx[] = INCBIN_U32("graphics/interface/bag_swap.4bpp.lz");
 const u32 gBagSwapLinePal[] = INCBIN_U32("graphics/interface/bag_swap.gbapal.lz");
+const u32 gSwapLineGfx_RegisteredItemsMenu[] = INCBIN_U32("graphics/interface/swap_line_tx.4bpp.lz");
 
 const u32 gBuyMenuFrame_Gfx[] = INCBIN_U32("graphics/interface/mart_frame.4bpp.lz");
 const u32 gMenuMoneyPal[] = INCBIN_U32("graphics/interface/mart_frame.gbapal.lz");

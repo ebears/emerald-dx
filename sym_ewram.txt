@@ -148,6 +148,7 @@
 	.include "src/faraway_island.o"
 	.include "src/trainer_hill.o"
 	.include "src/rayquaza_scene.o"
+	.include "src/tx_registered_items_menu.o"
 	.include "src/rhh_copyright.o"
 	.include "src/dns.o"
 	.include "src/quests.o"
