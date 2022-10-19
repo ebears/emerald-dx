@@ -20,19 +20,13 @@ The battle engine balance is completely changed from Gen. 3 - expect a feel more
 [Physical Special Split Icons In Battle](https://www.pokecommunity.com/showthread.php?p=10527471#post10527471)\
 [RHH Intro Credits](https://github.com/Xhyzi/pokeemerald/tree/rhh-intro-credits)\
 [HG/SS-Style Overworld Shadows](https://github.com/aarant/pokeemerald/commit/12e3b4efadafdef43bba26ca1ce897135808779c)\
-[Faster Text Speed](https://www.pokecommunity.com/showthread.php?p=10400198#post10400198)\
-[List Menu for Registered Items](https://www.pokecommunity.com/showpost.php?p=10380770)
+[Faster Text Speed Options](https://www.pokecommunity.com/showthread.php?p=10400198#post10400198)
 
 ### Engine Fixes
 
 [Improved WaitForVBlank Functioning (improving battery/performance)](https://github.com/pret/pokeemerald/wiki/Improving-the-WaitForVBlank-function)\
 [Faster HP Drain](https://github.com/pret/pokeemerald/wiki/Faster-HP-Drain)\
-[More Optimized Summary Screen](https://github.com/pret/pokeemerald/wiki/Make-space-for-EWRAM-Data-for-Summary-screen)\
-[Error Screen if Wrong Save Type](https://www.pokecommunity.com/showpost.php?p=10449518)\
-[Fixed Surfing Dismount Ground Effects](https://github.com/pret/pokeemerald/wiki/Surfing-Dismount-Ground-Effects)\
-[Fixed Wild Land Pokemon Encounter Ratio](https://www.pokecommunity.com/showpost.php?p=10376011)\
-[Restored Shred Split Battle Transition](https://www.pokecommunity.com/showpost.php?p=10449556)\
-[Properly Seeded RNG on New Game](https://www.pokecommunity.com/showpost.php?p=10211666&postcount=155)
+[More Optimized Summary Screen](https://github.com/pret/pokeemerald/wiki/Make-space-for-EWRAM-Data-for-Summary-screen)
 
 ### Dev Features
 
