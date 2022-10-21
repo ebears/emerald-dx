@@ -37,9 +37,8 @@ The current plan is to have Pokemon up to Gen. 4 be obtainable.
 
 ## Bugs
 
-Item registration menu is broken.
-Following Pokemon don't have shadows.
-Very large following Pokemon sprites (Regigigas) sometimes clip through tiles.
+Following Pokemon don't have shadows.\
+Very large following Pokemon sprites (Regigigas) sometimes clip through tiles.\
 Nighttime lights in Oldale Town turn 'off' when entering town connection.
 
 ## Credits
