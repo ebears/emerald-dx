@@ -2,7 +2,9 @@
 
 Just my project aimed at improving Pokemon Emerald. This is based on - and wouldn't be made possible without - the [pokeemerald](https://github.com/pret/pokeemerald) disassembly by PRET.
 
-The battle engine balance is completely changed from Gen. 3 - expect a feel more like Gen. 5.
+The battle engine balance is completely changed from Gen. 3 - expect a feel more like Gen. 4 or 5.
+
+The current plan is to have Pokemon up to Gen. 4 be obtainable.
 
 ## Information
 
@@ -16,6 +18,7 @@ The battle engine balance is completely changed from Gen. 3 - expect a feel more
 ### Other Features
 
 [Decapitzalized Text and Dialogue](https://github.com/ProfLeonDias/pokeemerald/tree/decapitalization)\
+[Unlimited TM Usage](https://github.com/pret/pokeemerald/wiki/Infinite-TM-usage)\
 [Colored Stats Based on Nature](https://github.com/DizzyEggg/pokeemerald/tree/nature_color)\
 [Physical Special Split Icons In Battle](https://www.pokecommunity.com/showthread.php?p=10527471#post10527471)\
 [RHH Intro Credits](https://github.com/Xhyzi/pokeemerald/tree/rhh-intro-credits)\
