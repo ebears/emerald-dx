@@ -10,7 +10,7 @@ The current plan is to have Pokemon up to Gen. 4 be obtainable.
 
 ### Notable Features
 
-[Battle Engine Upgrade](https://www.pokecommunity.com/showthread.php?t=417820) - **Physical / Special Split**, **Moves, Abilities, Pokémon and Items from new gens**, **Updated Learnsets**, **Fairy Typing**, **Ability pop-up**, **Exp points on catch**, **Faster battle intro**, **Mega Evolutions**, **Mid-battle Trainer messages**, and more.\
+[Battle Engine Upgrade](https://www.pokecommunity.com/showthread.php?t=417820) - *Physical / Special Split* | *Moves, Abilities, Pokémon and Items from new gens* | *Updated Learnsets* | *Fairy Typing* | *Ability pop-ups* | *Exp points on catching* | *Faster battle intro* | *Mega Evolutions* | *Mid-battle Trainer messages* | and more...\
 [Day & Night Cycle](https://github.com/Xhyzi/pokeemerald/tree/day-and-night)\
 [Following Pokemon (except Shellos, Gastrodon and Porygon-Z -- WIP)](https://github.com/W1serV1ser/pokeemerald/tree/FollowingPokemon)\
 [Unbound Quest Menu](https://www.pokecommunity.com/showthread.php?p=10528414#post10528414)
@@ -24,7 +24,8 @@ The current plan is to have Pokemon up to Gen. 4 be obtainable.
 [RHH Intro Credits](https://github.com/Xhyzi/pokeemerald/tree/rhh-intro-credits)\
 [HG/SS-Style Overworld Shadows](https://github.com/aarant/pokeemerald/commit/12e3b4efadafdef43bba26ca1ce897135808779c)\
 [Faster Text Speed Options](https://www.pokecommunity.com/showthread.php?p=10400198#post10400198)\
-[Newer Gen. Poke Mart Premier Balls](https://github.com/pret/pokeemerald/wiki/LGPE-Style-Bonus-Premier-Balls)
+[Newer Gen. Poke Mart Premier Balls](https://github.com/pret/pokeemerald/wiki/LGPE-Style-Bonus-Premier-Balls)\
+[Move Pokemon as First Pokemon Storage Option](https://www.pokecommunity.com/showpost.php?p=10065761)
 
 ### Engine Fixes
 
