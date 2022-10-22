@@ -47,7 +47,9 @@ and [Morning/Day/Evening/Night encounters (ONLY Step 1 implemented so far)](http
 Following Pokemon don't have shadows.\
 Very large following Pokemon sprites (Regigigas) sometimes clip through tiles.\
 Nighttime lights in Oldale Town turn 'off' when entering town connection.\
-Spawns a duplicate of the player when it should be their starter follower, but only in Prof. Birch's lab. Caused by commit 2353c2a52563eee98be762666c09a14cc7156e42\
+Spawns a duplicate of the player when it should be their starter follower, but only in Prof. Birch's lab. Frst noted in commit 2353c2a52563eee98be762666c09a14cc7156e42
+- I believe the root cause to be from the `/data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc` file
+    - Specifically in the function `LittlerootTown_ProfessorBirchsLab_EventScript_AgreeToSeeRival`, either at `addobject 7` (whatever *7* may represent) or else at `setfollower 7, 0x7E` (whatever *0x7E* may represent).
 
 ## Credits
 
