@@ -45,7 +45,8 @@ and [Morning/Day/Evening/Night encounters (ONLY Step 1 implemented so far)](http
 
 Following Pokemon don't have shadows.\
 Very large following Pokemon sprites (Regigigas) sometimes clip through tiles.\
-Nighttime lights in Oldale Town turn 'off' when entering town connection.
+Nighttime lights in Oldale Town turn 'off' when entering town connection.\
+Spawns a duplicate of the player when it should be their starter follower, but only in Prof. Birch's lab. Caused by commit 2353c2a52563eee98be762666c09a14cc7156e42\
 
 ## Credits
 
