@@ -20,6 +20,7 @@ and [Morning/Day/Evening/Night encounters (ONLY Step 1 implemented so far)](http
 
 [Decapitzalized Text and Dialogue](https://github.com/ProfLeonDias/pokeemerald/tree/decapitalization)\
 [Unlimited TM Usage](https://github.com/pret/pokeemerald/wiki/Infinite-TM-usage)\
+[HMs are Forgettable](https://www.pokecommunity.com/showpost.php?p=10182839&postcount=119)\
 [Colored Stats Based on Nature](https://github.com/DizzyEggg/pokeemerald/tree/nature_color)\
 [Physical Special Split Icons In Battle](https://www.pokecommunity.com/showthread.php?p=10527471#post10527471)\
 [RHH Intro Credits](https://github.com/Xhyzi/pokeemerald/tree/rhh-intro-credits)\
