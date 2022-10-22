@@ -142,6 +142,29 @@ void Special_ViewWallClock(void)
     ScriptContext2_Enable();
 }
 
+void GetEncounterTime(void)
+{
+	u8 encountertime;
+	RtcCalcLocalTime();
+	if (gLocalTime.hours >= 6 && gLocalTime.hours <= 8)
+	{
+		encountertime = 0; //Morning
+	}
+	else if (gLocalTime.hours >= 9 && gLocalTime.hours <= 17)
+	{
+		encountertime = 1; //Day
+	}
+	else if (gLocalTime.hours >= 18 && gLocalTime.hours <= 20)
+	{
+		encountertime = 2; //Evening
+	}
+	else
+	{
+		encountertime = 3; //Night
+	}
+	gSpecialVar_Result = encountertime;
+}
+
 void ResetCyclingRoadChallengeData(void)
 {
     gBikeCyclingChallenge = FALSE;

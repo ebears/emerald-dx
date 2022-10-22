@@ -12,6 +12,7 @@ The current plan is to have Pokemon up to Gen. 4 be obtainable.
 
 [Battle Engine Upgrade](https://www.pokecommunity.com/showthread.php?t=417820) - *Physical / Special Split* | *Moves, Abilities, Pokémon and Items from new gens* | *Updated Learnsets* | *Fairy Typing* | *Ability pop-ups* | *Exp points on catching* | *Faster battle intro* | *Mega Evolutions* | *Mid-battle Trainer messages* | and more...\
 [Day & Night Cycle](https://github.com/Xhyzi/pokeemerald/tree/day-and-night)\
+and [Morning/Day/Evening/Night encounters (ONLY Step 1 implemented so far)](https://www.pokecommunity.com/showpost.php?p=10450677)\
 [Following Pokemon (except Shellos, Gastrodon and Porygon-Z -- WIP)](https://github.com/W1serV1ser/pokeemerald/tree/FollowingPokemon)\
 [Unbound Quest Menu](https://www.pokecommunity.com/showthread.php?p=10528414#post10528414)
 
