@@ -34,7 +34,7 @@ EventScript_PkmnCenterNurse_IllTakeYourPkmn2::
 
 EventScript_PkmnCenterNurse_TakeAndHealPkmn::
 	followerintopokeball
-	call_if_eq VAR_UNUSED_0x8014, 1, EventScript_FollowerIntoPokeballDelay
+	call_if_eq VAR_FOLLOW_MON_FLAG_DUMMY, 1, EventScript_FollowerIntoPokeballDelay
 	applymovement VAR_0x800B, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	dofieldeffect FLDEFF_POKECENTER_HEAL
@@ -47,7 +47,7 @@ EventScript_PkmnCenterNurse_TakeAndHealPkmn::
     
 EventScript_FollowerIntoPokeballDelay::
 	delay 21
-	setvar VAR_UNUSED_0x8014, 0
+	setvar VAR_FOLLOW_MON_FLAG_DUMMY, 0
 	return
 
 EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom::
