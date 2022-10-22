@@ -4,7 +4,6 @@
 #include "blit.h"
 #include "dma3.h"
 #include "event_data.h"
-#include "field_specials.h"
 #include "graphics.h"
 #include "main.h"
 #include "menu.h"
@@ -187,15 +186,6 @@ u16 AddTextPrinterParameterized2(u8 windowId, u8 fontId, const u8 *str, u8 speed
 
     gTextFlags.useAlternateDownArrow = 0;
     return AddTextPrinter(&printer, speed, callback);
-}
-
-void AddTextPrinterForMessageWithTextColor(bool8 allowSkippingDelayWithButtonPress)
-{
-    u8 color;
-    gTextFlags.canABSpeedUpPrint = allowSkippingDelayWithButtonPress;
-
-    color = ContextNpcGetTextColor();
-    AddTextPrinterParameterized2(0, 1, gStringVar4, GetPlayerTextSpeedDelay(), NULL, gSpecialVar_TextColor, 1, 3);      
 }
 
 void AddTextPrinterForMessage(bool8 allowSkippingDelayWithButtonPress)
