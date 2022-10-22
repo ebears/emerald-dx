@@ -3889,7 +3889,7 @@ void UpdateFollowerPokemonGraphic(void)
         follower->graphicsId = leadMonGraphicId;
 
         // Specifically for Pokemon Center, if lead Pokemon is revived, deletes old follower and creates new one
-        if(gSpecialVar_FollowMonFlagDummy == 1)
+        if(gSpecialVar_Unused_0x8014 == 1)
         {
             u8 newSpriteId;
             struct ObjectEventTemplate clone;
@@ -3908,7 +3908,7 @@ void UpdateFollowerPokemonGraphic(void)
             follower->spriteId = newSpriteId;
             MoveObjectEventToMapCoords(follower, follower->currentCoords.x, follower->currentCoords.y);
             ObjectEventTurn(follower, follower->facingDirection);
-            gSpecialVar_FollowMonFlagDummy = 0;
+            gSpecialVar_Unused_0x8014 = 0;
         }
     }
 }
@@ -4426,6 +4426,6 @@ void FollowerIntoPokeball(void)
         gSaveBlock2Ptr->follower.comeOutDoorStairs = 0;
         gPlayerAvatar.preventStep = TRUE;
         ObjectEventForceSetHeldMovement(&gObjectEvents[gSaveBlock2Ptr->follower.objId], MOVEMENT_ACTION_FOLLOWING_POKEMON_SHRINK);
-        gSpecialVar_FollowMonFlagDummy = 1;
+        gSpecialVar_Unused_0x8014 = 1;
     }
 }

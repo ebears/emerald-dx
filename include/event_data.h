@@ -48,6 +48,5 @@ extern u16 gSpecialVar_MonBoxId;
 extern u16 gSpecialVar_MonBoxPos;
 extern u16 gSpecialVar_TextColor;
 extern u16 gSpecialVar_PrevTextColor;
-extern u16 gSpecialVar_FollowMonFlagDummy;
 
 #endif // GUARD_EVENT_DATA_H

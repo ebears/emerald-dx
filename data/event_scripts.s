@@ -88,7 +88,6 @@ gSpecialVars::
 	.4byte gSpecialVar_MonBoxPos
 	.4byte gSpecialVar_TextColor
 	.4byte gTrainerBattleOpponent_A
-	.4byte gSpecialVar_FollowMonFlagDummy
 
 	.include "data/specials.inc"
 
