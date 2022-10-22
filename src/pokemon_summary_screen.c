@@ -2290,7 +2290,6 @@ static void Task_HandleReplaceMoveInput(u8 taskId)
                 gSpecialVar_0x8005 = sMoveSlotToReplace;
                 BeginCloseSummaryScreen(taskId);
             }
-            }
             else if (JOY_NEW(B_BUTTON))
             {
                 StopPokemonAnimations();

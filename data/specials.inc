@@ -537,4 +537,3 @@ gSpecials::
 	def_special TrySetBattleTowerLinkType
 	def_special SetTotemBoost
 	def_special GetEncounterTime
-	
