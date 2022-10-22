@@ -25,7 +25,8 @@ The current plan is to have Pokemon up to Gen. 4 be obtainable.
 [HG/SS-Style Overworld Shadows](https://github.com/aarant/pokeemerald/commit/12e3b4efadafdef43bba26ca1ce897135808779c)\
 [Faster Text Speed Options](https://www.pokecommunity.com/showthread.php?p=10400198#post10400198)\
 [Newer Gen. Poke Mart Premier Balls](https://github.com/pret/pokeemerald/wiki/LGPE-Style-Bonus-Premier-Balls)\
-[Move Pokemon as First Pokemon Storage Option](https://www.pokecommunity.com/showpost.php?p=10065761)
+[Move Pokemon as First Pokemon Storage Option](https://www.pokecommunity.com/showpost.php?p=10065761)\
+[Togglable 2-in-1 Bike by Pressing R (Use the Acro Bike)](https://www.pokecommunity.com/showpost.php?p=10217718&postcount=172)
 
 ### Engine Fixes
 
