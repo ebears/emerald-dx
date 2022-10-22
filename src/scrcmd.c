@@ -93,6 +93,13 @@ static u8 * const sScriptStringVars[] =
     gStringVar3,
 };
 
+bool8 ScrCmd_textcolor(struct ScriptContext * ctx)
+ {
+     gSpecialVar_PrevTextColor = gSpecialVar_TextColor;
+     gSpecialVar_TextColor = ScriptReadByte(ctx);
+     return FALSE;
+ }
+
 bool8 ScrCmd_nop(struct ScriptContext *ctx)
 {
     return FALSE;

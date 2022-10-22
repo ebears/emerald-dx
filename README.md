@@ -19,6 +19,7 @@ and [Morning/Day/Evening/Night encounters (ONLY Step 1 implemented so far)](http
 ### Other Features
 
 [Decapitzalized Text and Dialogue](https://github.com/ProfLeonDias/pokeemerald/tree/decapitalization)\
+[FR/LG Object Textcolor Commands](https://github.com/pret/pokeemerald/wiki/Implementing-the-%E2%80%9Ctextcolor%E2%80%9D-script-command-from-FRLG-and-give-object-events-their-own-text-colour)\
 [Unlimited TM Usage](https://github.com/pret/pokeemerald/wiki/Infinite-TM-usage)\
 [HMs are Forgettable](https://www.pokecommunity.com/showpost.php?p=10182839&postcount=119)\
 [Colored Stats Based on Nature](https://github.com/DizzyEggg/pokeemerald/tree/nature_color)\
