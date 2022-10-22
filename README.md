@@ -31,7 +31,8 @@ The current plan is to have Pokemon up to Gen. 4 be obtainable.
 
 [Improved WaitForVBlank Functioning (improving battery/performance)](https://github.com/pret/pokeemerald/wiki/Improving-the-WaitForVBlank-function)\
 [Faster HP Drain](https://github.com/pret/pokeemerald/wiki/Faster-HP-Drain)\
-[More Optimized Summary Screen](https://github.com/pret/pokeemerald/wiki/Make-space-for-EWRAM-Data-for-Summary-screen)
+[More Optimized Summary Screen](https://github.com/pret/pokeemerald/wiki/Make-space-for-EWRAM-Data-for-Summary-screen)\
+[Removed Functionally Redundant Move Grammar Tables](https://github.com/pret/pokeemerald/wiki/Remove-the-functionally-redundant-move-grammar-tables)
 
 ### Dev Features
 
