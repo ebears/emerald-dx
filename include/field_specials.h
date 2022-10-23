@@ -4,6 +4,7 @@
 extern bool8 gBikeCyclingChallenge;
 extern u8 gBikeCollisions;
 
+u8 ContextNpcGetTextColor(void);
 u8 GetLeadMonIndex(void);
 u8 GetLeadMonNotFaintedIndex(void);
 u8 IsDestinationBoxFull(void);

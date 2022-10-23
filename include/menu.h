@@ -88,6 +88,7 @@ void PrintMenuActionTextsInUpperLeftCorner(u8 windowId, u8 optionsNo, const stru
 void ClearDialogWindowAndFrameToTransparent(u8 windowId, bool8 copyToVram);
 void *malloc_and_decompress(const void *src, u32 *sizeOut);
 u16 copy_decompressed_tile_data_to_vram(u8 bgId, const void *src, u16 size, u16 offset, u8 mode);
+void AddTextPrinterForMessageWithTextColor(bool8 allowSkippingDelayWithButtonPress);
 void AddTextPrinterForMessage(bool8 allowSkippingDelayWithButtonPress);
 void PrintMenuActionTexts(u8 windowId, u8 fontId, u8 left, u8 top, u8 letterSpacing, u8 lineHeight, u8 itemCount, const struct MenuAction *strs, const u8 *a8);
 void PrintMenuActionGrid(u8 windowId, u8 fontId, u8 left, u8 top, u8 a4, u8 itemCount, u8 itemCount2, const struct MenuAction *strs, const u8 *a8);

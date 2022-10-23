@@ -20,6 +20,7 @@ and [Morning/Day/Evening/Night encounters (ONLY Step 1 implemented so far)](http
 
 [DP/Pt-Style Pokemon Summary Screen](https://github.com/citrusbolt/pokeemerald/tree/summary_screen)\
 [Decapitzalized Text and Dialogue](https://github.com/ProfLeonDias/pokeemerald/tree/decapitalization)\
+[FR/LG Object Textcolor Commands](https://github.com/pret/pokeemerald/wiki/Implementing-the-%E2%80%9Ctextcolor%E2%80%9D-script-command-from-FRLG-and-give-object-events-their-own-text-colour)\
 [Unlimited TM Usage](https://github.com/pret/pokeemerald/wiki/Infinite-TM-usage)\
 [HMs are Forgettable](https://www.pokecommunity.com/showpost.php?p=10182839&postcount=119)\
 [Physical Special Split Icons In Battle](https://www.pokecommunity.com/showthread.php?p=10527471#post10527471)\
@@ -47,7 +48,12 @@ Following Pokemon don't have shadows.\
 Very large following Pokemon sprites (Regigigas) sometimes clip through tiles.\
 Nighttime lights in Oldale Town turn 'off' when entering town connection.\
 The Pokemon Summary screen is messed up when pressing A on the battle move or contest move screen.
-    - It could be likely this is from a broken .bin tilemap file, or a script file pointing to said file.
+- It could be likely this is from a broken .bin tilemap file, or a script file pointing to said file.
+
+Spawns a duplicate of the player when it should be their starter follower, but only in Prof. Birch's lab. Likely caused by commit 2353c2a52563eee98be762666c09a14cc7156e42
+- I believe the root cause to be from the `/data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc` file
+    - Specifically in the function `LittlerootTown_ProfessorBirchsLab_EventScript_AgreeToSeeRival`, either at `addobject 7` (whatever *7* may represent) or else at `setfollower 7, 0x7E` (whatever *0x7E* may represent).
+    - Commit ffd4e9cc79dd7e45042dcf48ffb5022afbc17cd7 seems to have remedied this problem, now the follow appears correctly but makes half the player sprite invisible for a half second.
 
 ## Credits
 

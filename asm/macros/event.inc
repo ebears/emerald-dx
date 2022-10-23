@@ -2174,12 +2174,12 @@
 	.endm
 
 	.macro pokemonfaceplayer objectId=254
-	setvar VAR_UNUSED_0x8014, \objectId
+	setvar VAR_FOLLOW_MON_FLAG_DUMMY, \objectId
 	callnative ScrCmd_pokemonfaceplayer
 	.endm
 
 	.macro updatefollowerpokemongraphic
-	setvar VAR_UNUSED_0x8014, 1
+	setvar VAR_FOLLOW_MON_FLAG_DUMMY, 1
 	callnative UpdateFollowerPokemonGraphic
 	.endm
 
@@ -2192,6 +2192,6 @@
 	.endm
     
     .macro followerintopokeball
-    setvar VAR_UNUSED_0x8014, 0
+    setvar VAR_FOLLOW_MON_FLAG_DUMMY, 0
     callnative FollowerIntoPokeball
     .endm

@@ -93,6 +93,13 @@ static u8 * const sScriptStringVars[] =
     gStringVar3,
 };
 
+bool8 ScrCmd_textcolor(struct ScriptContext * ctx)
+ {
+     gSpecialVar_PrevTextColor = gSpecialVar_TextColor;
+     gSpecialVar_TextColor = ScriptReadByte(ctx);
+     return FALSE;
+ }
+
 bool8 ScrCmd_nop(struct ScriptContext *ctx)
 {
     return FALSE;
@@ -2445,7 +2452,7 @@ bool8 ScrCmd_subquestmenu(struct ScriptContext *ctx)
 bool8 ScrCmd_pokemonfaceplayer(struct ScriptContext *ctx)
 {
     // The script will affect the following Pokemon if no argument is passed to it.
-    if(gSpecialVar_Unused_0x8014 == OBJ_EVENT_ID_FOLLOWER)
+    if(gSpecialVar_FollowMonFlagDummy == OBJ_EVENT_ID_FOLLOWER)
     {
         ObjectEventClearHeldMovement(&gObjectEvents[gSaveBlock2Ptr->follower.objId]);
         ObjectEventPokemonFacePlayer(&gObjectEvents[gSaveBlock2Ptr->follower.objId], &gObjectEvents[gPlayerAvatar.objectEventId]);
@@ -2453,36 +2460,36 @@ bool8 ScrCmd_pokemonfaceplayer(struct ScriptContext *ctx)
     // The script will affect an event object based on the local id passed to the script.
     else
     {
-        gSpecialVar_Unused_0x8014 = GetObjectEventIdByLocalIdAndMap(gSpecialVar_Unused_0x8014, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
-        ObjectEventClearHeldMovement(&gObjectEvents[gSpecialVar_Unused_0x8014]);
+        gSpecialVar_FollowMonFlagDummy = GetObjectEventIdByLocalIdAndMap(gSpecialVar_FollowMonFlagDummy, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
+        ObjectEventClearHeldMovement(&gObjectEvents[gSpecialVar_FollowMonFlagDummy]);
 
         #define POW2(num) (num * num)
 
         // Checks to see whether the object is furthest away from the player along the x or y axis.
-        if(POW2((gObjectEvents[gSpecialVar_Unused_0x8014].currentCoords.x - gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.x)) < POW2((gObjectEvents[gSpecialVar_Unused_0x8014].currentCoords.y - gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.y)))
+        if(POW2((gObjectEvents[gSpecialVar_FollowMonFlagDummy].currentCoords.x - gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.x)) < POW2((gObjectEvents[gSpecialVar_FollowMonFlagDummy].currentCoords.y - gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.y)))
         {
             // Player is South of object
-            if(gObjectEvents[gSpecialVar_Unused_0x8014].currentCoords.y < gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.y)
+            if(gObjectEvents[gSpecialVar_FollowMonFlagDummy].currentCoords.y < gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.y)
             {
-                ObjectEventSetHeldMovement(&gObjectEvents[gSpecialVar_Unused_0x8014], 159);
+                ObjectEventSetHeldMovement(&gObjectEvents[gSpecialVar_FollowMonFlagDummy], 159);
             }
             // Player is North of object
             else
             {
-                ObjectEventSetHeldMovement(&gObjectEvents[gSpecialVar_Unused_0x8014], 160);
+                ObjectEventSetHeldMovement(&gObjectEvents[gSpecialVar_FollowMonFlagDummy], 160);
             }
         }
         else
         {
             // Player is East of object
-            if(gObjectEvents[gSpecialVar_Unused_0x8014].currentCoords.x < gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.x)
+            if(gObjectEvents[gSpecialVar_FollowMonFlagDummy].currentCoords.x < gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.x)
             {
-                ObjectEventSetHeldMovement(&gObjectEvents[gSpecialVar_Unused_0x8014], 162);
+                ObjectEventSetHeldMovement(&gObjectEvents[gSpecialVar_FollowMonFlagDummy], 162);
             }
             // Player is West of object
             else
             {
-                ObjectEventSetHeldMovement(&gObjectEvents[gSpecialVar_Unused_0x8014], 161);
+                ObjectEventSetHeldMovement(&gObjectEvents[gSpecialVar_FollowMonFlagDummy], 161);
             }
         }
     }
