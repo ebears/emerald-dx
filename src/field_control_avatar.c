@@ -28,7 +28,6 @@
 #include "trainer_see.h"
 #include "trainer_hill.h"
 #include "wild_encounter.h"
-#include "debug.h"
 #include "follow_me.h"
 #include "constants/event_bg.h"
 #include "constants/event_objects.h"
@@ -135,13 +134,6 @@ void FieldGetPlayerInput(struct FieldInput *input, u16 newKeys, u16 heldKeys)
         input->dpadDirection = DIR_WEST;
     else if (heldKeys & DPAD_RIGHT)
         input->dpadDirection = DIR_EAST;
-    #if DEBUGGING
-    if ((heldKeys & R_BUTTON) && input->pressedStartButton)
-    {
-        input->input_field_1_2 = TRUE;
-        input->pressedStartButton = FALSE;
-    }
-    #endif
 }
 
 int ProcessPlayerFieldInput(struct FieldInput *input)
@@ -209,34 +201,6 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
     }
     if (input->pressedSelectButton && UseRegisteredKeyItemOnField() == TRUE)
         return TRUE;
-    
-    if (input->pressedRButton && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_MACH_BIKE | PLAYER_AVATAR_FLAG_ACRO_BIKE))
-    {
-        ObjectEventClearHeldMovementIfActive(&gObjectEvents[gPlayerAvatar.objectEventId]);
-        
-        if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_MACH_BIKE)
-        {
-            gPlayerAvatar.flags -= PLAYER_AVATAR_FLAG_MACH_BIKE;
-            gPlayerAvatar.flags += PLAYER_AVATAR_FLAG_ACRO_BIKE;
-            SetPlayerAvatarTransitionFlags(PLAYER_AVATAR_FLAG_ACRO_BIKE);
-            PlaySE(SE_BIKE_HOP);
-        }
-        else
-        {
-            gPlayerAvatar.flags -= PLAYER_AVATAR_FLAG_ACRO_BIKE;
-            gPlayerAvatar.flags += PLAYER_AVATAR_FLAG_MACH_BIKE;
-            SetPlayerAvatarTransitionFlags(PLAYER_AVATAR_FLAG_MACH_BIKE);
-            PlaySE(SE_BIKE_BELL);
-        }
-    }
-    #if DEBUGGING
-        if (input->input_field_1_2)
-        {
-            PlaySE(SE_WIN_OPEN);
-            Debug_ShowMainMenu();
-            return TRUE;
-        }
-    #endif
 
     return FALSE;
 }
