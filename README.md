@@ -40,7 +40,7 @@ and [Morning/Day/Evening/Night encounters (ONLY Step 1 implemented so far)](http
 
 ### Dev Features
 
-[Debug Menu (requires game to be built as 'make dev=1')](https://github.com/pret/pokeemerald/wiki/Add-a-debug-menu)
+[Debug Menu (requires game to be built as 'make DDEBUGGING=1')](https://github.com/pret/pokeemerald/wiki/Add-a-debug-menu)
 
 ## Bugs
 

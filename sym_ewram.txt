@@ -151,4 +151,3 @@
 	.include "src/rhh_copyright.o"
 	.include "src/dns.o"
 	.include "src/quests.o"
-	.include "src/debug.o"

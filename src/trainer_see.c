@@ -1,6 +1,5 @@
 #include "global.h"
 #include "battle_setup.h"
-#include "debug.h"
 #include "event_data.h"
 #include "event_object_movement.h"
 #include "field_effect.h"
@@ -196,11 +195,6 @@ static const struct SpriteTemplate sSpriteTemplate_HeartIcon =
 bool8 CheckForTrainersWantingBattle(void)
 {
     u8 i;
-
-    #if TX_DEBUG_SYSTEM_ENABLE == TRUE
-        if (FlagGet(FLAG_SYS_NO_TRAINER_SEE))
-            return FALSE;
-    #endif
 
     gNoOfApproachingTrainers = 0;
     gApproachingTrainerId = 0;
