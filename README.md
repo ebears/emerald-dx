@@ -18,10 +18,10 @@ and [Morning/Day/Evening/Night encounters (ONLY Step 1 implemented so far)](http
 
 ### Other Features
 
+[DP/Pt-Style Pokemon Summary Screen](https://github.com/citrusbolt/pokeemerald/tree/summary_screen)\
 [Decapitzalized Text and Dialogue](https://github.com/ProfLeonDias/pokeemerald/tree/decapitalization)\
 [Unlimited TM Usage](https://github.com/pret/pokeemerald/wiki/Infinite-TM-usage)\
 [HMs are Forgettable](https://www.pokecommunity.com/showpost.php?p=10182839&postcount=119)\
-[Colored Stats Based on Nature](https://github.com/DizzyEggg/pokeemerald/tree/nature_color)\
 [Physical Special Split Icons In Battle](https://www.pokecommunity.com/showthread.php?p=10527471#post10527471)\
 [RHH Intro Credits](https://github.com/Xhyzi/pokeemerald/tree/rhh-intro-credits)\
 [HG/SS-Style Overworld Shadows](https://github.com/aarant/pokeemerald/commit/12e3b4efadafdef43bba26ca1ce897135808779c)\
@@ -45,7 +45,9 @@ and [Morning/Day/Evening/Night encounters (ONLY Step 1 implemented so far)](http
 
 Following Pokemon don't have shadows.\
 Very large following Pokemon sprites (Regigigas) sometimes clip through tiles.\
-Nighttime lights in Oldale Town turn 'off' when entering town connection.
+Nighttime lights in Oldale Town turn 'off' when entering town connection.\
+The Pokemon Summary screen is messed up when pressing A on the battle move or contest move screen.
+    - It could be likely this is from a broken .bin tilemap file, or a script file pointing to said file.
 
 ## Credits
 
@@ -67,6 +69,8 @@ Everyone from [rh-hideout](https://github.com/rh-hideout)\
 [ellabrella](https://www.pokecommunity.com/member.php?u=751712)\
 [aarant](https://github.com/aarant)\
 [Syreldar](https://www.pokecommunity.com/member.php?u=766687)\
-[TheXaman](https://www.pokecommunity.com/member.php?u=743189)
+[TheXaman](https://www.pokecommunity.com/member.php?u=743189)\
+JaizuFangaming#2172\
+Citrus Bolt#4642
 
 ...and everyone else in the Pokémon decompilation community. Thank you.
