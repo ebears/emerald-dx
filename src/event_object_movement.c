@@ -10216,7 +10216,6 @@ u8 MovementAction_FollowingPokemon_Shrink_Step0(struct ObjectEvent *objectEvent,
         case ITEM_PREMIER_BALL:
             spriteId = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_PREMIER_BALL, &PokeballCallback, x, y, 2);
             break;
-        #ifdef ITEM_EXPANSION
         case ITEM_HEAL_BALL:
             spriteId = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_HEAL_BALL, &PokeballCallback, x, y, 2);
             break;
@@ -10259,7 +10258,6 @@ u8 MovementAction_FollowingPokemon_Shrink_Step0(struct ObjectEvent *objectEvent,
         case ITEM_CHERISH_BALL:
             spriteId = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_CHERISH_BALL, &PokeballCallback, x, y, 2);
             break;
-        #endif
         default: // PokeBall
             spriteId = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_ITEM_BALL, &PokeballCallback, x, y, 2);
             break;

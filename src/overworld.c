@@ -4335,7 +4335,6 @@ void FollowerPokeballSparkle(void)
             case ITEM_PREMIER_BALL:
                 spriteId = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_PREMIER_BALL, &SparklePokeballCallback, x, y, 2);
                 break;
-            #ifdef ITEM_EXPANSION
             case ITEM_HEAL_BALL:
                 spriteId = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_HEAL_BALL, &SparklePokeballCallback, x, y, 2);
                 break;
@@ -4378,7 +4377,6 @@ void FollowerPokeballSparkle(void)
             case ITEM_CHERISH_BALL:
                 spriteId = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_CHERISH_BALL, &SparklePokeballCallback, x, y, 2);
                 break;
-            #endif
             default: // PokeBall
                 spriteId = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_ITEM_BALL, &SparklePokeballCallback, x, y, 2);
                 break;

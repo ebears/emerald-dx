@@ -120,9 +120,7 @@ enum { // Flags and Vars
 };
 enum { // Battle 0 Type
     DEBUG_BATTLE_0_MENU_ITEM_WILD,
-#ifdef BATTLE_ENGINE
     DEBUG_BATTLE_0_MENU_ITEM_WILD_DOUBLE,
-#endif
     DEBUG_BATTLE_0_MENU_ITEM_SINGLE,
     DEBUG_BATTLE_0_MENU_ITEM_DOUBLE,
     DEBUG_BATTLE_0_MENU_ITEM_MULTI,
@@ -138,7 +136,6 @@ enum { // Battle 1 AI FLags
     DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_07,
     DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_08,
     DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_09,
-#ifdef BATTLE_ENGINE
     DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_10,
     DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_11,
     DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_12,
@@ -146,7 +143,6 @@ enum { // Battle 1 AI FLags
     DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_14,
     DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_15,
     DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_16,
-#endif
     DEBUG_BATTLE_1_MENU_ITEM_CONTINUE,
 };
 enum { // Battle 2 Terrain
@@ -245,11 +241,7 @@ struct DebugBattleData
     u8 submenu;
     u8 battleType;
     u8 battleTerrain;
-#ifdef BATTLE_ENGINE
     bool8 aiFlags[17];
-#else
-    bool8 aiFlags[10];
-#endif
 };
 
 // EWRAM
@@ -641,9 +633,7 @@ static const struct ListMenuItem sDebugMenu_Items_FlagsVars[] =
 static const struct ListMenuItem sDebugMenu_Items_Battle_0[] =
 {
     [DEBUG_BATTLE_0_MENU_ITEM_WILD]        = {sDebugText_Battle_0_Wild,       DEBUG_BATTLE_0_MENU_ITEM_WILD},
-    #ifdef BATTLE_ENGINE
     [DEBUG_BATTLE_0_MENU_ITEM_WILD_DOUBLE] = {sDebugText_Battle_0_WildDouble, DEBUG_BATTLE_0_MENU_ITEM_WILD_DOUBLE},
-    #endif
     [DEBUG_BATTLE_0_MENU_ITEM_SINGLE]      = {sDebugText_Battle_0_Single,     DEBUG_BATTLE_0_MENU_ITEM_SINGLE},
     [DEBUG_BATTLE_0_MENU_ITEM_DOUBLE]      = {sDebugText_Battle_0_Double,     DEBUG_BATTLE_0_MENU_ITEM_DOUBLE},
     [DEBUG_BATTLE_0_MENU_ITEM_MULTI]       = {sDebugText_Battle_0_Mulit,      DEBUG_BATTLE_0_MENU_ITEM_MULTI},
@@ -660,7 +650,6 @@ static const struct ListMenuItem sDebugMenu_Items_Battle_1[] =
     [DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_07] = {sDebugText_Battle_1_AIFlag_07, DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_07},
     [DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_08] = {sDebugText_Battle_1_AIFlag_08, DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_08},
     [DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_09] = {sDebugText_Battle_1_AIFlag_09, DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_09},
-#ifdef BATTLE_ENGINE
     [DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_10] = {sDebugText_Battle_1_AIFlag_10, DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_10},
     [DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_11] = {sDebugText_Battle_1_AIFlag_11, DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_11},
     [DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_12] = {sDebugText_Battle_1_AIFlag_12, DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_12},
@@ -668,7 +657,6 @@ static const struct ListMenuItem sDebugMenu_Items_Battle_1[] =
     [DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_14] = {sDebugText_Battle_1_AIFlag_14, DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_14},
     [DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_15] = {sDebugText_Battle_1_AIFlag_15, DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_15},
     [DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_16] = {sDebugText_Battle_1_AIFlag_16, DEBUG_BATTLE_1_MENU_ITEM_AI_FLAG_16},
-#endif
     [DEBUG_BATTLE_1_MENU_ITEM_CONTINUE]   = {sDebugText_Continue,           DEBUG_BATTLE_1_MENU_ITEM_CONTINUE},
 };
 static const struct ListMenuItem sDebugMenu_Items_Battle_2[] =
@@ -1095,13 +1083,8 @@ static void Debug_InitDebugBattleData(void)
     sDebugBattleData->battleType    = 0xFF;
     sDebugBattleData->battleTerrain = 0xFF;
     
-#ifdef BATTLE_ENGINE
     for (i = 0; i < 17; i++)
         sDebugBattleData->aiFlags[i] = FALSE;
-#else
-    for (i = 0; i < 10; i++)
-        sDebugBattleData->aiFlags[i] = FALSE;
-#endif
 }
 
 static void Debug_RefreshListMenu(u8 taskId)
@@ -1346,9 +1329,7 @@ static void DebugTask_HandleMenuInput_Battle(u8 taskId)
             Debug_DestroyMenu(taskId);
 
             if (sDebugBattleData->battleType == DEBUG_BATTLE_0_MENU_ITEM_WILD // Skip AI Flag selection if wild battle
-                #ifdef BATTLE_ENGINE
                 || sDebugBattleData->battleType == DEBUG_BATTLE_0_MENU_ITEM_WILD_DOUBLE
-                #endif
                 )
             {
                 sDebugBattleData->submenu++;
@@ -1396,9 +1377,7 @@ static void DebugTask_HandleMenuInput_Battle(u8 taskId)
             break;
         case 2: // Skip AI Flag selection if wild battle
             if (sDebugBattleData->battleType == DEBUG_BATTLE_0_MENU_ITEM_WILD 
-                #ifdef BATTLE_ENGINE
                 || sDebugBattleData->battleType == DEBUG_BATTLE_0_MENU_ITEM_WILD_DOUBLE
-                #endif
                 )
             {
                 sDebugBattleData->submenu = 0;
@@ -2667,9 +2646,7 @@ static void DebugAction_Give_PokemonSimple(u8 taskId)
     #ifndef POKEMON_EXPANSION
         gTasks[taskId].data[6] = CreateMonIcon(gTasks[taskId].data[3], SpriteCB_MonIcon, DEBUG_NUMBER_ICON_X, DEBUG_NUMBER_ICON_Y, 4, 0, TRUE); //Create pokemon sprite
     #endif
-    #ifdef POKEMON_EXPANSION
         gTasks[taskId].data[6] = CreateMonIcon(gTasks[taskId].data[3], SpriteCB_MonIcon, DEBUG_NUMBER_ICON_X, DEBUG_NUMBER_ICON_Y, 4, 0); //Create pokemon sprite
-    #endif
     gSprites[gTasks[taskId].data[6]].oam.priority = 0; //Mon Icon ID
 }
 static void DebugAction_Give_PokemonComplex(u8 taskId)
@@ -2710,9 +2687,7 @@ static void DebugAction_Give_PokemonComplex(u8 taskId)
     #ifndef POKEMON_EXPANSION
         gTasks[taskId].data[6] = CreateMonIcon(gTasks[taskId].data[3], SpriteCB_MonIcon, DEBUG_NUMBER_ICON_X, DEBUG_NUMBER_ICON_Y, 4, 0, TRUE); //Create pokemon sprite
     #endif
-    #ifdef POKEMON_EXPANSION
         gTasks[taskId].data[6] = CreateMonIcon(gTasks[taskId].data[3], SpriteCB_MonIcon, DEBUG_NUMBER_ICON_X, DEBUG_NUMBER_ICON_Y, 4, 0); //Create pokemon sprite
-    #endif
     gSprites[gTasks[taskId].data[6]].oam.priority = 0; //Mon Icon ID
     gTasks[taskId].data[7] = 0;             //iterator
 }
@@ -2763,9 +2738,7 @@ static void DebugAction_Give_Pokemon_SelectId(u8 taskId)
         #ifndef POKEMON_EXPANSION
             gTasks[taskId].data[6] = CreateMonIcon(gTasks[taskId].data[3], SpriteCB_MonIcon, DEBUG_NUMBER_ICON_X, DEBUG_NUMBER_ICON_Y, 4, 0, TRUE); //Create pokemon sprite
         #endif
-        #ifdef POKEMON_EXPANSION
             gTasks[taskId].data[6] = CreateMonIcon(gTasks[taskId].data[3], SpriteCB_MonIcon, DEBUG_NUMBER_ICON_X, DEBUG_NUMBER_ICON_Y, 4, 0); //Create pokemon sprite
-        #endif
         gSprites[gTasks[taskId].data[6]].oam.priority = 0;
     }
 
@@ -2971,9 +2944,7 @@ static void DebugAction_Give_Pokemon_SelectAbility(u8 taskId)
     u8 abilityId;
     u8 abilityCount = 2 - 1; //-1 for proper iteration
     u8 i = 0;
-    #ifdef POKEMON_EXPANSION
-        abilityCount = NUM_ABILITY_SLOTS - 1;
-    #endif
+    abilityCount = NUM_ABILITY_SLOTS - 1;
 
     if (gMain.newKeys & DPAD_ANY)
     {

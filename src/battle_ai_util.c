@@ -3380,9 +3380,7 @@ static const u16 sRecycleEncouragedItems[] =
     ITEM_MICLE_BERRY,
     ITEM_CUSTAP_BERRY,
     ITEM_MENTAL_HERB,
-    #ifdef ITEM_EXPANSION
     ITEM_FOCUS_SASH,
-    #endif
     // TODO expand this
 };
 
@@ -3398,9 +3396,7 @@ bool32 IsStatBoostingBerry(u16 item)
     case ITEM_APICOT_BERRY:
     //case ITEM_LANSAT_BERRY:
     case ITEM_STARF_BERRY:
-    #ifdef ITEM_EXPANSION
     case ITEM_MICLE_BERRY:
-    #endif
         return TRUE;
     default:
         return FALSE;

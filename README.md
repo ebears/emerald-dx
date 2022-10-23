@@ -44,20 +44,28 @@ and [Morning/Day/Evening/Night encounters (ONLY Step 1 implemented so far)](http
 
 ## Bugs
 
-Following Pokemon don't have shadows.\
-Very large following Pokemon sprites (Regigigas) sometimes clip through tiles.\
-Nighttime lights in Oldale Town turn 'off' when entering town connection.\
-The Pokemon Summary screen is messed up when pressing A on the battle move or contest move screen.
-- It could be likely this is from a broken .bin tilemap file, or a script file pointing to said file.
+Following Pokemon don't have shadows.
+
+Very large following Pokemon sprites (Regigigas) sometimes clip through tiles.
+
+Nighttime lights in Oldale Town turn 'off' when entering town connection.
 
 Spawns a duplicate of the player when it should be their starter follower, but only in Prof. Birch's lab. Likely caused by commit 2353c2a52563eee98be762666c09a14cc7156e42
-- I believe the root cause to be from the `/data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc` file
+
+- I believe the root cause to be from the `/
+data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc` file
+
     - Specifically in the function `LittlerootTown_ProfessorBirchsLab_EventScript_AgreeToSeeRival`, either at `addobject 7` (whatever *7* may represent) or else at `setfollower 7, 0x7E` (whatever *0x7E* may represent).
-    - Commit ffd4e9cc79dd7e45042dcf48ffb5022afbc17cd7 seems to have remedied this problem, now the follow appears correctly but makes half the player sprite invisible for a half second.
+
+
+- ~~Commit ffd4e9cc79dd7e45042dcf48ffb5022afbc17cd7 seems to have remedied this problem, now the follow appears correctly but makes half the player sprite invisible for a half second.~~
+
+    - <insert commit number here> reintroduced the original bug.
+
 
 ## Credits
 
-Everyone from [pret](https://github.com/pret)\
+Everyone from [PRET](https://github.com/pret)\
 Everyone from [rh-hideout](https://github.com/rh-hideout)\
 [huderlem](https://github.com/huderlem)\
 [GriffinRichards](https://github.com/GriffinRichards)\
