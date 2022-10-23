@@ -1549,7 +1549,7 @@
 	.2byte \box
 	.endm
 
-	@ Used only in FireRed/LeafGreen, does nothing in Emerald.
+	@ Used only in FireRed/LeafGreen, does nothing in Emerald || NOTE - Actually does something now
 	.macro textcolor color:req
 	.byte 0xc7
 	.byte \color
@@ -2191,7 +2191,7 @@
 	callnative ShowFollower
 	.endm
     
-    .macro followerintopokeball
-    setvar VAR_FOLLOW_MON_FLAG_DUMMY, 0
-    callnative FollowerIntoPokeball
-    .endm
+	.macro followerintopokeball
+	setvar VAR_FOLLOW_MON_FLAG_DUMMY, 0
+	callnative FollowerIntoPokeball
+	.endm

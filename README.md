@@ -50,17 +50,17 @@ Very large following Pokemon sprites (Regigigas) sometimes clip through tiles.
 
 Nighttime lights in Oldale Town turn 'off' when entering town connection.
 
-Spawns a duplicate of the player when it should be their starter follower, but only in Prof. Birch's lab. Likely caused by commit [2353c2a52563eee98be762666c09a14cc7156e42](https://github.com/ebears/emerald-dx/commit/2353c2a52563eee98be762666c09a14cc7156e42).
+~~Spawns a duplicate of the player when it should be their starter follower, but only in Prof. Birch's lab. Likely caused by commit [2353c2a52563eee98be762666c09a14cc7156e42](https://github.com/ebears/emerald-dx/commit/2353c2a52563eee98be762666c09a14cc7156e42).~~
 
-- I believe the root cause to be from the `/
-data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc` file
+- ~~I believe the root cause to be from the `/
+data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc` file~~
 
-    - Specifically in the function `LittlerootTown_ProfessorBirchsLab_EventScript_AgreeToSeeRival`, either at `addobject 7` (whatever *7* may represent) or else at `setfollower 7, 0x7E` (whatever *0x7E* may represent).
+    - ~~Specifically in the function `LittlerootTown_ProfessorBirchsLab_EventScript_AgreeToSeeRival`, either at `addobject 7` (whatever *7* may represent) or else at `setfollower 7, 0x7E` (whatever *0x7E* may represent).~~
 
 
 - ~~Commit [ffd4e9cc79dd7e45042dcf48ffb5022afbc17cd7](https://github.com/ebears/emerald-dx/commit/ffd4e9cc79dd7e45042dcf48ffb5022afbc17cd7) seems to have remedied this problem, now the following Pokemon appears correctly but makes half the player sprite invisible for a half second.~~
 
-    - Commit [2230a49602f6ac2090c01436ff2dc033861488fb](https://github.com/ebears/emerald-dx/commit/2230a49602f6ac2090c01436ff2dc033861488fb) reintroduced the original bug.
+    - ~~Commit [2230a49602f6ac2090c01436ff2dc033861488fb](https://github.com/ebears/emerald-dx/commit/2230a49602f6ac2090c01436ff2dc033861488fb) reintroduced the original bug.~~
 
 
 ## Credits

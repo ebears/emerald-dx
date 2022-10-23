@@ -145,6 +145,13 @@ LittlerootTown_ProfessorBirchsLab_EventScript_AgreeToSeeRival::
 	setfollower 7, 0x7E
 	updatefollowerpokemongraphic
 	releaseall
+	@ some funny stuff is required to have the follower appear as a Pokemon, otherwise it is a duplicate of the player
+	lock
+	warp MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB, 6, 5
+	waitstate
+	updatefollowerpokemongraphic
+	release
+	@ funny stuff done
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_DeclineSeeingRival::
