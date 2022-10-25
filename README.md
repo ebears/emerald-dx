@@ -21,6 +21,7 @@ and [Morning/Day/Evening/Night encounters (ONLY Step 1 implemented so far)](http
 [DP/Pt-Style Pokemon Summary Screen](https://github.com/citrusbolt/pokeemerald/tree/summary_screen)\
 [Decapitzalized Text and Dialogue](https://github.com/ProfLeonDias/pokeemerald/tree/decapitalization)\
 [FR/LG Object Textcolor Commands](https://github.com/pret/pokeemerald/wiki/Implementing-the-%E2%80%9Ctextcolor%E2%80%9D-script-command-from-FRLG-and-give-object-events-their-own-text-colour)\
+[Expanded Options Menu](https://github.com/TheXaman/pokeemerald/tree/tx_optionsPlus)\
 [Unlimited TM Usage](https://github.com/pret/pokeemerald/wiki/Infinite-TM-usage)\
 [HMs are Forgettable](https://www.pokecommunity.com/showpost.php?p=10182839&postcount=119)\
 [Physical Special Split Icons In Battle](https://www.pokecommunity.com/showthread.php?p=10527471#post10527471)\
@@ -70,6 +71,7 @@ Everyone from [rh-hideout](https://github.com/rh-hideout)\
 [huderlem](https://github.com/huderlem)\
 [GriffinRichards](https://github.com/GriffinRichards)\
 [DizzyEgg](https://github.com/DizzyEggg)\
+[Avara](https://www.pokecommunity.com/member.php?u=294199)\
 [LOuroboros](https://github.com/LOuroboros)\
 [AsparagusEduardo](https://github.com/AsparagusEduardo)\
 [NotToDisturb](https://github.com/NotToDisturb)\
