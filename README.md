@@ -2,9 +2,11 @@
 
 Just my project aimed at improving Pokemon Emerald. This is based on - and wouldn't be made possible without - the [pokeemerald](https://github.com/pret/pokeemerald) disassembly by PRET.
 
+All Pokemon up to Gen. 4 will be obtainable.
+
 The battle engine balance is completely changed from Gen. 3 - expect a feel more like Gen. 4 or 5.
 
-The current plan is to have Pokemon up to Gen. 4 be obtainable.
+This is inspired, of course, by the many hacks of [Drayano60](https://twitter.com/drayano60). It is also influenced by [Altered Emerald](https://www.pokecommunity.com/showthread.php?t=386229) and it's interesting expansions to the land of Hoenn.
 
 ## Information
 
@@ -21,7 +23,7 @@ and [Morning/Day/Evening/Night encounters](https://www.pokecommunity.com/showpos
 [DP/Pt-Style Pokemon Summary Screen](https://github.com/citrusbolt/pokeemerald/tree/summary_screen)\
 [Decapitzalized Text and Dialogue](https://github.com/ProfLeonDias/pokeemerald/tree/decapitalization)\
 [FR/LG Object Textcolor Commands](https://github.com/pret/pokeemerald/wiki/Implementing-the-%E2%80%9Ctextcolor%E2%80%9D-script-command-from-FRLG-and-give-object-events-their-own-text-colour)\
-[Expanded Options Menu](https://github.com/TheXaman/pokeemerald/tree/tx_optionsPlus)\
+[Expanded Options Menu](https://www.pokecommunity.com/showpost.php?p=10275248)\
 [Unlimited TM Usage](https://github.com/pret/pokeemerald/wiki/Infinite-TM-usage)\
 [HMs are Forgettable](https://www.pokecommunity.com/showpost.php?p=10182839&postcount=119)\
 [Physical Special Split Icons In Battle](https://www.pokecommunity.com/showthread.php?p=10527471#post10527471)\
@@ -52,12 +54,6 @@ Very large following Pokemon sprites (Regigigas) sometimes clip through tiles.
 Nighttime lights in Oldale Town turn 'off' when entering town connection.
 
 ~~Spawns a duplicate of the player when it should be their starter follower, but only in Prof. Birch's lab. Likely caused by commit [2353c2a52563eee98be762666c09a14cc7156e42](https://github.com/ebears/emerald-dx/commit/2353c2a52563eee98be762666c09a14cc7156e42).~~
-
-- ~~I believe the root cause to be from the `/
-data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc` file~~
-
-    - ~~Specifically in the function `LittlerootTown_ProfessorBirchsLab_EventScript_AgreeToSeeRival`, either at `addobject 7` (whatever *7* may represent) or else at `setfollower 7, 0x7E` (whatever *0x7E* may represent).~~
-
 
 - ~~Commit [ffd4e9cc79dd7e45042dcf48ffb5022afbc17cd7](https://github.com/ebears/emerald-dx/commit/ffd4e9cc79dd7e45042dcf48ffb5022afbc17cd7) seems to have remedied this problem, now the following Pokemon appears correctly but makes half the player sprite invisible for a half second.~~
 
