@@ -22,6 +22,11 @@
       "direction": "right",
       "offset": 0,
       "map": "MAP_OLDALE_TOWN"
+    },
+    {
+      "direction": "down",
+      "offset": 6,
+      "map": "MAP_LITTLEROOT_CONNECTION"
     }
   ],
   "object_events": [
@@ -143,8 +148,12 @@
       "flag": "0"
     }
   ],
-  "warp_events": [],
-  "coord_events": [],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
