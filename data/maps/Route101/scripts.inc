@@ -3,11 +3,60 @@
 
 Route101_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route101_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, Route101_OnResume
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route101_OnFrame
 	.byte 0
 
 Route101_OnTransition:
+	special GetEncounterTime
+	goto_if_eq VAR_RESULT, 3, Route101_OnTransition_Night
+	goto_if_eq VAR_RESULT, 2, Route101_OnTransition_Evening
+	goto_if_eq VAR_RESULT, 1, Route101_OnTransition_Day
+	goto_if_eq VAR_RESULT, 0, Route101_OnTransition_Morning
+	end
+
+Route101_OnTransition_Morning:
+	setvar VAR_DAYNIGHT, 0
 	call ProfBirch_EventScript_UpdateLocation
+	end
+
+Route101_OnTransition_Day:
+	setvar VAR_DAYNIGHT, 1
+	call ProfBirch_EventScript_UpdateLocation
+	end
+
+Route101_OnTransition_Evening:
+	setvar VAR_DAYNIGHT, 2
+	call ProfBirch_EventScript_UpdateLocation
+	end
+
+Route101_OnTransition_Night:
+	setvar VAR_DAYNIGHT, 3
+	call ProfBirch_EventScript_UpdateLocation
+	end
+
+Route101_OnResume:
+	special GetEncounterTime
+	goto_if_eq VAR_RESULT, 3, Route101_OnResume_Night
+	goto_if_eq VAR_RESULT, 2, Route101_OnResume_Evening
+	goto_if_eq VAR_RESULT, 1, Route101_OnResume_Day
+	goto_if_eq VAR_RESULT, 0, Route101_OnResume_Morning
+	end
+
+Route101_OnResume_Night:
+	setvar VAR_DAYNIGHT, 3
+	end
+	
+Route101_OnResume_Evening:
+	setvar VAR_DAYNIGHT, 2
+	end
+
+Route101_OnResume_Day:
+	setvar VAR_DAYNIGHT, 1
+	end
+	
+Route101_OnResume_Morning:
+	setvar VAR_DAYNIGHT, 0
 	end
 
 Route101_OnFrame:
@@ -24,8 +73,8 @@ Route101_EventScript_StartBirchRescue::
 	playbgm MUS_HELP, TRUE
 	msgbox Route101_Text_HelpMe, MSGBOX_DEFAULT
 	closemessage
-	setobjectxy LOCALID_BIRCH, 0, 15
-	setobjectxy LOCALID_ZIGZAGOON, 0, 16
+	setobjectxy LOCALID_BIRCH, 10, 15
+	setobjectxy LOCALID_ZIGZAGOON, 10, 16
 	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_EnterScene
 	applymovement LOCALID_BIRCH, Route101_Movement_BirchRunAway1
 	applymovement LOCALID_ZIGZAGOON, Route101_Movement_ZigzagoonChase1
@@ -225,7 +274,7 @@ Route101_EventScript_BirchsBag::
 	setflag FLAG_RESCUED_BIRCH
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_ZIGZAGOON
-	setobjectxy OBJ_EVENT_ID_PLAYER, 6, 13
+	setobjectxy OBJ_EVENT_ID_PLAYER, 16, 13
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	special ChooseStarter
