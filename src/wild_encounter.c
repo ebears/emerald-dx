@@ -314,6 +314,22 @@ static u16 GetCurrentMapWildMonHeaderId(void)
                 gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE101))
                 i += VarGet(VAR_DAYNIGHT);
 
+			if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE102) &&
+                gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE102))
+                i += VarGet(VAR_DAYNIGHT);
+
+			if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE103) &&
+                gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE103))
+                i += VarGet(VAR_DAYNIGHT);
+
+			if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE104) &&
+                gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE104))
+                i += VarGet(VAR_DAYNIGHT);
+
+			if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LITTLEROOT_CONNECTION) &&
+                gSaveBlock1Ptr->location.mapNum == MAP_NUM(LITTLEROOT_CONNECTION))
+                i += VarGet(VAR_DAYNIGHT);
+
             if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ALTERING_CAVE) &&
                 gSaveBlock1Ptr->location.mapNum == MAP_NUM(ALTERING_CAVE))
             {

@@ -2,12 +2,58 @@
 
 Route103_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route103_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, Route103_OnResume
 	map_script MAP_SCRIPT_ON_LOAD, Route103_OnLoad
 	.byte 0
 
 Route103_OnTransition:
+	special GetEncounterTime
+	goto_if_eq VAR_RESULT, 3, Route103_OnTransition_Night
+	goto_if_eq VAR_RESULT, 2, Route103_OnTransition_Evening
+	goto_if_eq VAR_RESULT, 1, Route103_OnTransition_Day
+	goto_if_eq VAR_RESULT, 0, Route103_OnTransition_Morning
 	call Common_EventScript_SetupRivalGfxId
 	call ProfBirch_EventScript_UpdateLocation
+	end
+
+Route103_OnTransition_Morning:
+	setvar VAR_DAYNIGHT, 0
+	end
+
+Route103_OnTransition_Day:
+	setvar VAR_DAYNIGHT, 1
+	end
+
+Route103_OnTransition_Evening:
+	setvar VAR_DAYNIGHT, 2
+	end
+
+Route103_OnTransition_Night:
+	setvar VAR_DAYNIGHT, 3
+	end
+
+Route103_OnResume:
+	special GetEncounterTime
+	goto_if_eq VAR_RESULT, 3, Route103_OnResume_Night
+	goto_if_eq VAR_RESULT, 2, Route103_OnResume_Evening
+	goto_if_eq VAR_RESULT, 1, Route103_OnResume_Day
+	goto_if_eq VAR_RESULT, 0, Route103_OnResume_Morning
+	end
+
+Route103_OnResume_Night:
+	setvar VAR_DAYNIGHT, 3
+	end
+	
+Route103_OnResume_Evening:
+	setvar VAR_DAYNIGHT, 2
+	end
+
+Route103_OnResume_Day:
+	setvar VAR_DAYNIGHT, 1
+	end
+	
+Route103_OnResume_Morning:
+	setvar VAR_DAYNIGHT, 0
 	end
 
 Route103_OnLoad:

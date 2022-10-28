@@ -77,8 +77,6 @@ Some tips before proceeding:
     sudo apt update && sudo apt upgrade
     ```
 
-> Note: If the repository you plan to build has an **[older revision of the INSTALL.md](https://github.com/pret/pokeemerald/blob/571c598/INSTALL.md)**, then follow the [legacy WSL1 instructions](docs/legacy_WSL1_INSTALL.md) from here.
-
 4. Certain packages are required to build pokeemerald. Install these packages by running the following command:
 
     ```bash
@@ -331,13 +329,6 @@ Run the following command to install the necessary packages:
 sudo apt install build-essential binutils-arm-none-eabi git libpng-dev
 ```
 Then proceed to [Choosing where to store pokeemerald (Linux)](#choosing-where-to-store-pokeemerald-linux).
-<details>
-    <summary><i>Note for legacy repos...</i></summary>
-
->   If the repository you plan to build has an **[older revision of the INSTALL.md](https://github.com/pret/pokeemerald/blob/571c598/INSTALL.md)**,
->   then you will have to install devkitARM. Install all the above packages except binutils-arm-none-eabi, and follow the instructions to
->   [install devkitARM on Debian/Ubuntu-based distributions](#installing-devkitarm-on-debianubuntu-based-distributions).
-</details>
 
 ### Other distributions
 _(Specific instructions for other distributions would be greatly appreciated!)_
