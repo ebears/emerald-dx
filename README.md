@@ -20,6 +20,7 @@ and [Morning/Day/Evening/Night encounters](https://www.pokecommunity.com/showpos
 
 ### Other Features
 
+[Soft Level Scaling on Wild Pokemon](https://www.pokecommunity.com/showpost.php?p=10356613)\
 [DP/Pt-Style Pokemon Summary Screen](https://github.com/citrusbolt/pokeemerald/tree/summary_screen)\
 [Decapitzalized Text and Dialogue](https://github.com/ProfLeonDias/pokeemerald/tree/decapitalization)\
 [FR/LG Object Textcolor Commands](https://github.com/pret/pokeemerald/wiki/Implementing-the-%E2%80%9Ctextcolor%E2%80%9D-script-command-from-FRLG-and-give-object-events-their-own-text-colour)\
@@ -83,6 +84,7 @@ Everyone from [rh-hideout](https://github.com/rh-hideout)\
 [aarant](https://github.com/aarant)\
 [Syreldar](https://www.pokecommunity.com/member.php?u=766687)\
 [TheXaman](https://www.pokecommunity.com/member.php?u=743189)\
+[surskitty](https://www.pokecommunity.com/member.php?u=922491)\
 JaizuFangaming#2172\
 Citrus Bolt#4642
 
