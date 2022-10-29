@@ -44,7 +44,7 @@ and [Morning/Day/Evening/Night encounters](https://www.pokecommunity.com/showpos
 
 ### Dev Features
 
-[Debug Menu (requires game to be built as 'make DDEBUGGING=1')](https://github.com/pret/pokeemerald/wiki/Add-a-debug-menu)
+~~[Debug Menu (requires game to be built as 'make DDEBUGGING=1')](https://github.com/pret/pokeemerald/wiki/Add-a-debug-menu)~~ Once again a WIP
 
 ## Bugs
 
