@@ -1,3 +1,5 @@
+# MOVED TO A NEW REPOSITORY - [pokeemerald-bear](https://github.com/ebears/emerald-dx)
+
 # Pokémon Emerald: bear Edition
 
 Just my project aimed at improving Pokemon Emerald. This is based on - and wouldn't be made possible without - the [pokeemerald](https://github.com/pret/pokeemerald) disassembly by PRET.
