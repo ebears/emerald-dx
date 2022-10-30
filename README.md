@@ -1,4 +1,4 @@
-# MOVED TO A NEW REPOSITORY - [pokeemerald-bear](https://github.com/ebears/emerald-dx)
+# MOVED TO A NEW REPOSITORY - [pokeemerald-bear](https://github.com/ebears/pokeemerald-bear)
 
 # Pokémon Emerald: bear Edition
 
