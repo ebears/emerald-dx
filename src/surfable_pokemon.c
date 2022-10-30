@@ -147,7 +147,7 @@ static void UpdateSurfMonOverlay(struct Sprite *sprite)
     {
         sprite->x = linkedSprite->x;
         sprite->y = linkedSprite->y + 8;
-        sprite->y = linkedSprite->y;
+        sprite->y2 = linkedSprite->y2;
     }
     if (!(gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_SURFING))
         DestroySprite(sprite);
