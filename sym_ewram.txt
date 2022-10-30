@@ -151,3 +151,4 @@
 	.include "src/rhh_copyright.o"
 	.include "src/dns.o"
 	.include "src/quests.o"
+	.include "src/surfable_pokemon.o"

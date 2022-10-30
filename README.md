@@ -20,6 +20,7 @@ and [Morning/Day/Evening/Night encounters](https://www.pokecommunity.com/showpos
 
 ### Other Features
 
+[Most Gen 1-3 Pokemon as Surf Sprites](https://github.com/surskitty/pokeemerald/wiki#surfable)\
 [Soft Level Scaling on Wild Pokemon](https://www.pokecommunity.com/showpost.php?p=10356613)\
 [DP/Pt-Style Pokemon Summary Screen](https://github.com/citrusbolt/pokeemerald/tree/summary_screen)\
 [Decapitzalized Text and Dialogue](https://github.com/ProfLeonDias/pokeemerald/tree/decapitalization)\

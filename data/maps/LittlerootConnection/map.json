@@ -3,7 +3,7 @@
   "name": "LittlerootConnection",
   "layout": "LAYOUT_LITTLEROOT_CONNECTION",
   "music": "MUS_ROUTE101",
-  "region_map_section": "MAP_LITTLEROOT_CONNECTION",
+  "region_map_section": "MAPSEC_ROUTE_101",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",
